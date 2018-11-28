@@ -4,7 +4,7 @@ paths = {}
 // Define Paths
 paths.src = {
   root: path.resolve(__dirname, './src'),
-  entry: path.resolve(__dirname, './src/js/index.js'),
+  entry: path.resolve(__dirname, './src/index.js'),
   js: path.resolve(__dirname, './src/js'),
   styles: path.resolve(__dirname, './src/sass'),
 }
@@ -45,7 +45,7 @@ module.exports = {
           {loader: MiniCssExtractPlugin.loader},
           {loader: 'css-loader', options: {importLoaders: 1}},
           // {loader: 'import-glob-loader'},
-          {loader: 'postcss-loader'},
+          // {loader: 'postcss-loader'},
           {loader: 'sass-loader', options: {includePaths: ['node_modules']}}, // Enable For Sass
         ]
       }

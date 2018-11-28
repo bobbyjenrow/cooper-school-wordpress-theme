@@ -121,8 +121,10 @@ add_action( 'widgets_init', 'cooper_school_widgets_init' );
  */
 function cooper_school_scripts() {
 	wp_enqueue_style( 'cooper-school-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'main-style', get_template_directory_uri().'/main.css', array(), microtime(), false );
+	wp_enqueue_script( 'bundle.js', get_template_directory_uri().'/js/bundle.js', array(), microtime(), false );
 
-	wp_enqueue_script( 'cooper-school-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'cooper-school-navigation', get_template_directory_uri() . '/js/navigation.js', array(), microtime(), true );
 
 	wp_enqueue_script( 'cooper-school-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -159,3 +161,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+function remove_admin_login_header() {
+    remove_action('wp_head', '_admin_bar_bump_cb');
+}
+add_action('get_header', 'remove_admin_login_header');

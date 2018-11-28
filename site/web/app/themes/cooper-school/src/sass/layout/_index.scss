@@ -1,0 +1,89 @@
+// Grid
+.container{
+  display: flex;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+.row{
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.main-column-left{
+  max-width: 17.1rem;
+  margin: 60px 50px;
+}
+.main-column-right{
+  max-width: 20.8rem;
+  margin: 60px 50px;
+}
+// Sections
+.section{
+  display: flex;
+  padding: 1rem 0;
+}
+.section--hero{
+  padding: 0;
+}
+.section--about{
+  & .main__content{
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  & .column-item--right{
+    margin-top: 4.666em;
+    margin-bottom: 6.25rem;
+  }
+}
+.section--blog{
+  flex-direction: column;
+}
+.section--events{
+  flex-direction: column;
+}
+.section--mission{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & .wrapper{
+    background-color: $tan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+// Header
+.header{
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+}
+.header__content{
+}
+.header__left{
+  margin: 1rem 0 0 1rem;
+}
+.header__right{
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+// Footer
+.footer{
+  background-color: $primary;
+  color: $font-color-light;
+}
+.footer__content{
+
+}

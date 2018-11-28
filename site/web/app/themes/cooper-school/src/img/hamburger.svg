@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.45 45.27">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 18px;
+        font-family: FarnhamHeadline-Medium, Farnham Headline;
+      }
+      .cls-1,
+      .cls-4 {
+        fill: #ffffff;
+      }
+      .cls-2 {
+        letter-spacing: -0.01em;
+      }
+      .cls-3 {
+        letter-spacing: -0.01em;
+      }
+      .cls-4 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+      #hamburger{
+        animation: fadeOut 1s ease-out;
+      }
+      #hamburger .collapse{
+        animation: fadeIn 1s ease-out;
+      }
+    </style>
+  </defs>
+  <title>hamburger</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="hamburger" class="collapse">
+        <text id="label" class="cls-1" transform="translate(0 41.5)">
+          <tspan class="cls-2">M</tspan>
+          <tspan x="15.3" y="0">e</tspan>
+          <tspan class="cls-3" x="23.42" y="0">n</tspan>
+          <tspan x="33.35" y="0">u</tspan>
+        </text><line id="third" class="cls-4" x1="0.17" y1="1.5" x2="43.17" y2="1.5"/><line id="second" class="cls-4" x1="0.17" y1="13.5" x2="43.17" y2="13.5"/><line id="first" class="cls-4" x1="0.17" y1="25.5" x2="43.17" y2="25.5"/></g>
+    </g>
+  </g>
+</svg>

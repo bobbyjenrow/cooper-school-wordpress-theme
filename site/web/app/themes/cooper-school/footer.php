@@ -11,26 +11,31 @@
 
 ?>
 
-	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cooper-school' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'cooper-school' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cooper-school' ), 'cooper-school', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
+	<footer class="footer">
+	  <div class="footer__content container">
+	    <div class="column column--left">
+	      <div class="text-contact-info">
+	        <span class="t5">The Cooper School, 13 Oakdale Place, Charleston, SC 29407     •     (843) 573-1033</span>
+	      </div>
+	      <div class="social-bar">
+	        <span>insta</span>
+	        <span>fb</span>
+	        <span>linkdin</span>
+	        <span>tweet</span>
+	      </div>
+	      <div class="text-legal">
+	        <h6>Copyright © 2018 The Cooper School, All Rights Reserved</h6>
+	      </div>
+	    </div>
+	    <div class="column column--right">
+	      <div class="newsletter">
+	        <h5>Sign Up for Our Newsletter</h5>
+	        <input class="input-text input-newsletter" type="text" placeholder="Your Email Address" />
+	      </div>
+	    </div>
+	  </div>
+	</footer>
 
 </body>
 </html>

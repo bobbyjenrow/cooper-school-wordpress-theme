@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  font-family: $font-base;
+  font-size: $font-size-base;
+  color: $font-color;
+  background-color: $bg;
+  margin: 0 !important;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+  font-family: $font-heading;
+}
+.th{
+  font-size: $fh;
+}
+h1,.t1{
+  font-size: $f1;
+}
+h2,.t2{
+  font-size: $f2;
+}
+h3,.t3{
+  font-size: $f3;
+}
+h4,.t4{
+  font-size: $f4;
+}
+h5,.t5{
+  font-size: $f5;
+}
+h6,.t6{
+  font-size: $f7;
+}
+a{
+  color: $primary;
+  text-decoration: none;
+  padding-bottom: .2rem;
+  border-bottom: 2px solid $primary;
+}
+a,p{
+  font-weight: normal;
+}

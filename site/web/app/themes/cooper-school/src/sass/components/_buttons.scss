@@ -1,0 +1,72 @@
+.btn{
+  font-family: $font-base;
+  font-size: $font-size-base;
+  border: 0;
+  &:hover{
+    cursor: pointer;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.btn--primary{
+  padding: $button-padding-y $button-padding-x;
+  border-radius: 6px;
+  background-color: $primary;
+  color: $font-color-light;
+  font-size: $f4;
+}
+.btn--light{
+  padding: $button-padding-y $button-padding-x;
+  border-radius: 6px;
+  background-color: $bg;
+  color: $primary;
+  font-size: $f4;
+}
+.btn--lg{
+  padding: 18px 32px;
+  font-size: $f3;
+}
+.btn--blog{
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  color: $font-color-light;
+  width: 226px;
+  height: 171px;
+  border-radius: 6px;
+  font-size: $f3;
+  border: 0;
+  margin: .5rem;
+}
+@mixin buttonBlogBG($color,$bg1){
+  background-image: url($bg1),linear-gradient(rgba($color, 1), rgba($color, 1));
+  background-repeat: no-repeat,no-repeat;
+  background-size: cover;
+  background-position: center,center;
+  &:hover{
+
+  }
+}
+
+.btn--bg-red{
+  @include buttonBlogBG($red, 'https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543413197/Layer_594_gpctfk.png' )
+}
+.btn--bg-blue{
+  @include buttonBlogBG($blue, 'https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543413196/Layer_584_psr8nr.png' )
+}
+.btn--bg-dblue{
+  @include buttonBlogBG($dblue, 'https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543413196/Layer_593_cmf02p.png' )
+}
+.btn--bg-green{
+  @include buttonBlogBG($green, 'https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543413196/Layer_596_svwnpt.png' )
+}
+.btn--bg-yellow{
+  @include buttonBlogBG($yellow, 'https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543413196/Layer_590_rbjccd.png' )
+}
+.btn--bg-purple{
+  @include buttonBlogBG($purple, 'https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543413196/Layer_588_zggu55.png' )
+}
+.btn--bg-orange{
+  @include buttonBlogBG($orange, 'https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543413196/Layer_589_rehpxq.png' )
+}
