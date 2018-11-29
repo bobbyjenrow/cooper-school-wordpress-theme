@@ -12,8 +12,8 @@
 ?>
 
 
-	<footer class="footer">
-	  <div class="container--footer">
+
+	  <footer class="footer container--footer">
 			<div class="row--footer">
 				<div class="column--footer-left">
 		      <div class="text--contact">
@@ -22,9 +22,6 @@
 						<span >(843) 573-1033</span>
 		      </div>
 		      <? get_template_part('social-bar') ?>
-		      <div class="text-legal">
-		        <h6>Copyright © 2018 The Cooper School, All Rights Reserved</h6>
-		      </div>
 		    </div>
 		    <div class="column--footer-right">
 		      <div class="newsletter">
@@ -32,8 +29,10 @@
 		        <input class="input--newsletter" type="text" placeholder="Your Email Address" />
 		      </div>
 		    </div>
+				<div class="column--footer-bottom">
+					<span class="text--legal">Copyright © 2018 The Cooper School, All Rights Reserved</span>
+				</div>
 			</div>
-	  </div>
 	</footer>
 
 </body>

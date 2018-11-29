@@ -9,6 +9,9 @@
   flex-flow: column;
   justify-content: center;
   padding: 0 200px;
+  opacity: 1;
+  transition: opacity 1s ease;
+  transform: translate(0);
   & a{
     color: $bg;
     border: 0;
@@ -18,13 +21,12 @@
 
 }
 
-.collapsed{
-  visibility: hidden;
+.mega-collapsed{
+  transform: translate(99999px);
   opacity: 0;
   position: absolute;
-  transition: all 1s ease;
+  transition: opacity 1s ease;
   left: 0;
-  display: none;
 }
 .hamburger{
   &:focus{

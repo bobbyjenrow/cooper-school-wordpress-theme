@@ -35,11 +35,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 22px;
-  max-width: 620px;
+  max-width: 630px;
 }
 .text-body--mission{
   margin-block-start: 0;
-  max-width: 830px;
+  width: 100%;
+  max-width: 950px;
+
 }
 
 .link--important{
@@ -51,9 +53,13 @@
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 15px;
+  text-align: center;
+  @media screen and (min-width: $bp-lg){
+    text-align: left;
+  }
 }
 .footer .text--contact{
-  font-weight: 300;
+  font-weight: 200;
   font-size: 18px;
   margin-bottom: 30px;
   & .space{
@@ -72,5 +78,6 @@
   }
 }
 .text--legal{
-
+  font-size: 12px;
+  font-weight: 200;
 }

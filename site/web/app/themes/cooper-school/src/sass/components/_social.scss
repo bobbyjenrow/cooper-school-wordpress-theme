@@ -1,11 +1,17 @@
 .footer .social-bar{
+  margin: 0 auto;
   width: 150px;
   display: flex;
   justify-content: space-between;
   fill: #ffffff;
   transition: .3s ease-out;
   & .social :hover{
+    transition: .3s ease-out;
     fill: $font-color;
+  }
+  @media screen and (min-width: $bp-lg){
+  margin: 0;
+  margin-top: 1rem;
   }
 }
 .mega-nav .social-bar{
@@ -15,6 +21,7 @@
   fill: $font-color;
   transition: .3s ease-out;
   & .social :hover{
+    transition: .3s ease-out;
     fill: $primary;
   }
 }

@@ -31,13 +31,13 @@
 .header__left{
   margin: .5rem 0 0 .5rem;
   @media screen and (min-width: $bp-md){
-    margin: 2rem 0 0 2rem;
+    margin: 50px 0 0 15px;
   }
 }
 .header__right{
   position: absolute;
   top: 2rem;
-  right: 1rem;
+  right: 15px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -48,7 +48,4 @@
   background-color: $primary;
   color: $font-color-light;
   min-height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

@@ -49,4 +49,13 @@ a{
   text-decoration: none;
   padding-bottom: .2rem;
   border-bottom: 2px solid $primary;
+  transition: .2s ease-in;
+  & :hover{
+      transition: .2s ease-in;
+    color: $font-color;
+  }
+}
+input{
+  font-family: $font-base;
+  font-size: $font-size-base;
 }
