@@ -1,95 +1,25 @@
-// Grid
-// .container{
-//   display: flex;
-//   margin: 0 auto;
-//   max-width: $max-width;
-// }
-// .row{
-//   display: flex;
-//   width: 100%;
-//   flex-flow: wrap;
-//   flex-direction: row;
-//   justify-content: center;
-// }
-// .column{
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .main__content{
-//   max-width: $max-width;
-//   justify-content: space-between;
-// }
-// .main__column--left{
-//   display: flex;
-//   justify-content: center;
-//   width: 500px;
-// }
-// .main__column--right{
-//   display: flex;
-//   justify-content: center;
-//   width: 430px;
-// }
-// Sections
-.section{
-  display: flex;
-  padding: 1rem 0;
-}
-.section--hero{
-  padding: 0;
-  width: 100%;
-}
-.section--about{
-  // @media screen and (max-width: 500px){
-  // & .main__content{
-  //   justify-content: space-between;
-  // }
-  // & .column__item{
-  //   margin: 1rem .5rem;
-  // }
-  // }
-  // @media screen and (min-width: $bp-md){
-  //   & .column__item--right{
-  //     margin-top: 2.666em;
-  //     margin-bottom: 2.25rem;
-  //   }
-  //   & .column__item--left{
-  //     max-width: 380px;
-  //   }
-  // }
-}
-// .section--blog{
-//   flex-direction: column;
-//   justify-content: space-between;
-//   max-width: $max-width;
-//   margin: 0 auto;
-// }
-// .section__row--first{
-//   display: flex;
-//   justify-content: center;
-//   @media screen and (min-width: 800px){
-//     justify-content: space-between;
-//
-//   }
-// }
-// .section--events{
-//   margin: 0 auto;
-//   flex-direction: column;
-//   justify-content: space-between;
-// }
-.section--mission{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  & .wrapper{
-    background-color: $tan;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.s-blog{
+  margin-top: 110px;
+  & h1{
+    margin-top: 0;
   }
 }
+.s-events{
+  margin-top: 110px;
+  & h1{
+    margin-top: 0;
+  }
+}
+.s-mission{
+  margin-top: 110px;
+  text-align: center;
+  & h2{
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 // Header
 .header{
   width: 100%;
@@ -117,7 +47,8 @@
 .footer{
   background-color: $primary;
   color: $font-color-light;
-}
-.footer__content{
-
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

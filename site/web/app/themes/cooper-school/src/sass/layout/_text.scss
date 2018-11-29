@@ -1,6 +1,76 @@
-.about-text{
-  max-width: 300px;
+.column__item--left{
+  max-width: 400px;
+  & h1,h2{
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  & p {
+    margin-block-start: .5rem;
+    margin-block-end: .5rem;
+  }
 }
-.about-action{
+.column__item--right{
+  & h1,h2{
+    margin-top: 0;
+  }
+  padding-bottom: 140px;
+  padding-top: 140px;
+}
+.text-wrapper{
+  display: block;
+}
+.text-wrapper--center{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-heading{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.text-heading--mission{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  max-width: 620px;
+}
+.text-body--mission{
+  margin-block-start: 0;
+  max-width: 830px;
+}
+
+.link--important{
+  font-size: 18px;
+}
+
+.heading--newsletter{
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.footer .text--contact{
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 30px;
+  & .space{
+    display: inline-block;
+    text-align: center;
+    width: 2rem;
+  }
+}
+.mega-nav__footer .text--contact{
+  font-weight: 600;
+  font-size: 1rem;
+  & .space{
+    display: inline-block;
+    text-align: center;
+    width: 2rem;
+  }
+}
+.text--legal{
 
 }

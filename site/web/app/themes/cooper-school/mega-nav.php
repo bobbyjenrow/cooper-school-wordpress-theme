@@ -3,7 +3,7 @@
     <div class="column header__left logo__column">
 				<img src="https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543421792/cooper-logo_pvtmqt.png" alt="">
     </div>
-    <div class="column content__column">
+    <div class="column content__column content__column--about">
       <h4>About Us</h4>
       <ul>
         <li>
@@ -38,7 +38,7 @@
         </li>
       </ul>
     </div>
-    <div class="column content__column">
+    <div class="column content__column content__column--approach">
       <h4>Our Approach</h4>
       <ul>
         <li>
@@ -73,7 +73,7 @@
         </li>
       </ul>
     </div>
-    <div class="column content__column">
+    <div class="column content__column content__column--admissions">
       <h4>Admissions</h4>
       <ul>
         <li>
@@ -93,7 +93,7 @@
         </li>
       </ul>
     </div>
-    <div class="column content__column content__column--big">
+    <div class="column content__column content__column--news">
       <h4>News</h4>
       <ul>
         <li>
@@ -103,19 +103,15 @@
           <a href="#">Contact</a>
         </li>
       </ul>
-      <button class="btn btn--light login-button" type="button" name="button">Login</button>
+      <button class="btn btn--light btn--login" type="button" name="button">Login</button>
     </div>
-    <div class="column content__column"></div>
   </div>
   <div class="row mega-nav__footer">
-    <span class="t5">The Cooper School, 13 Oakdale Place, Charleston, SC 29407      •      (843) 573-1033</span>
-    <span class="social-bard">
-      <svg>
-        <use class="instagram" x="10" y="10" xlink:href="https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543434566/iconmonstr-instagram-11_suxrjp.svg" />
-        <use class="facebook" x="10" y="10" xlink:href="https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543434567/iconmonstr-facebook-1_wlzex2.svg" />
-        <use class="linkedin" x="10" y="10" xlink:href="https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543434566/iconmonstr-linkedin-1_tspmka.svg" />
-        <use class="twitter" x="10" y="10" xlink:href="https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543434566/iconmonstr-twitter-1_jtef2w.svg" />
-      </svg>
-    </span>
+    <div class="text--contact">
+      <span >The Cooper School, 13 Oakdale Place, Charleston, SC 29407</span>
+      <span class="space">•</span>
+      <span >(843) 573-1033</span>
+    </div>
+    <? get_template_part('social-bar') ?>
   </div>
 </nav>

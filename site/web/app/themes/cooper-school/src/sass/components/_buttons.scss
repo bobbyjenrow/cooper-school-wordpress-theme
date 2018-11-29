@@ -2,6 +2,7 @@
   font-family: $font-base;
   font-size: $font-size-base;
   border: 0;
+  transition: .3s ease-out;
   &:hover{
     cursor: pointer;
   }
@@ -15,8 +16,32 @@
   background-color: $primary;
   color: $font-color-light;
   font-size: $f4;
+  &:hover{
+    background-color: darken($primary, 10%);
+  }
 }
-.btn--light{
+.btn--hero{
+  padding: 21px 30px;
+  border-radius: 6px;
+  background-color: $primary;
+  color: $font-color-light;
+  font-size: $f4;
+  &:hover{
+    background-color: darken($primary, 10%);
+  }
+}
+.btn--cta{
+  padding: 21px 25px;
+  font-weight: 200;
+  border-radius: 6px;
+  background-color: $primary;
+  color: $font-color-light;
+  font-size: $f4;
+  &:hover{
+    background-color: darken($primary, 10%);
+  }
+}
+.btn--login{
   padding: $button-padding-y $button-padding-x;
   border-radius: 6px;
   background-color: $bg;
@@ -24,6 +49,10 @@
   font-size: $f4;
 }
 .btn--lg{
+  padding: 18px 32px;
+  font-size: $f3;
+}
+.btn--fat{
   padding: 18px 32px;
   font-size: $f3;
 }
@@ -43,14 +72,18 @@
   font-size: $f3;
   border: 0;
   padding-bottom: 0;
+  transition: .3s ease-in;
 }
 @mixin buttonBlogBG($color,$bg1){
-  background-image: url($bg1),linear-gradient(rgba($color, 1), rgba($color, 1));
+  $mycolor: rgba($color, 1);
+  $mydarkcolor: darken($mycolor,10%);
+  $mydarkfilter: rgba($mydarkcolor, .2);
+  background-image: url($bg1),linear-gradient($mycolor,$mycolor);
   background-repeat: no-repeat,no-repeat;
   background-size: cover;
   background-position: center,center;
   &:hover{
-
+    background-image: url($bg1), linear-gradient($mydarkcolor,$mydarkcolor);
   }
 }
 

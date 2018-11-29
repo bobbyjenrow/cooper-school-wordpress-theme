@@ -13,27 +13,26 @@
 
 
 	<footer class="footer">
-	  <div class="footer__content container">
-	    <div class="column column--left">
-	      <div class="text-contact-info">
-	        <span class="t5">The Cooper School, 13 Oakdale Place, Charleston, SC 29407     •     (843) 573-1033</span>
-	      </div>
-	      <div class="social-bar">
-	        <span>insta</span>
-	        <span>fb</span>
-	        <span>linkdin</span>
-	        <span>tweet</span>
-	      </div>
-	      <div class="text-legal">
-	        <h6>Copyright © 2018 The Cooper School, All Rights Reserved</h6>
-	      </div>
-	    </div>
-	    <div class="column column--right">
-	      <div class="newsletter">
-	        <h5>Sign Up for Our Newsletter</h5>
-	        <input class="input-text input-newsletter" type="text" placeholder="Your Email Address" />
-	      </div>
-	    </div>
+	  <div class="container--footer">
+			<div class="row--footer">
+				<div class="column--footer-left">
+		      <div class="text--contact">
+						<span >The Cooper School, 13 Oakdale Place, Charleston, SC 29407</span>
+						<span class="space">•</span>
+						<span >(843) 573-1033</span>
+		      </div>
+		      <? get_template_part('social-bar') ?>
+		      <div class="text-legal">
+		        <h6>Copyright © 2018 The Cooper School, All Rights Reserved</h6>
+		      </div>
+		    </div>
+		    <div class="column--footer-right">
+		      <div class="newsletter">
+		        <h5 class="heading--newsletter">Sign Up for Our Newsletter</h5>
+		        <input class="input--newsletter" type="text" placeholder="Your Email Address" />
+		      </div>
+		    </div>
+			</div>
 	  </div>
 	</footer>
 

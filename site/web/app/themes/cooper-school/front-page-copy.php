@@ -33,7 +33,7 @@ get_header();
           <p>Cultivating the next generation of innovators and explorers, curious scientists and mathematicians, imaginative authors and artists, and engaged change makers.</p>
           <a href="" class="link--important">Our Approach</a>
         </div>
-        <div class="column__item column__item--right">
+        <div class="column__item column__item--left">
           <h2>Whole Child Education</h2>
           <p>Our responsive classrooms value cooperation, assertion, responsibility, empathy, nurturing and gratitude.</p>
           <a href="" class="link--important">Apply Today</a>

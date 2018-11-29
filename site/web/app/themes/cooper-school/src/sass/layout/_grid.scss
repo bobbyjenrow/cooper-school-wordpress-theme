@@ -1,81 +1,140 @@
 .container{
-  @include container();
+  @include container($gutters);
 }
 .container--fluid{
   @include container-fluid();
 }
 .row{
-  @include row();
+  @include row($gutters);
+}
+.row--fluid{
+  @include row-nogutters();
 }
 // Specific Containers
 .container--about{
-  @include container(40px);
+  @include container($gutters);
 }
 .container--events{
-  @include container(44px);
+  @include container($gutters);
 }
-
+.container--blog{
+  @include container($gutters);
+}
+.container--footer{
+  @include container($gutters);
+  max-width: 100%;
+  width: 100%;
+}
 // Specific Rows
 .row--about{
-  @include row();
+  @include row($gutters);
   flex-flow: column;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  @media screen and (min-width: $bp-md){
+  // margin-left: 0;
+  // margin-right: 0;
+  @media screen and (min-width: $bp-lg){
     flex-flow: row;
     justify-content: space-between;
   }
 }
+
+$blog-gutter: 42px;
 .row--blog{
-  @include row(40px);
+  @include row($blog-gutter);
   flex-wrap: wrap;
   justify-content: center;
-  @media screen and (min-width: $bp-md){
+  @media screen and (min-width: $bp-lg){
     justify-content: center;
   }
 }
+$event-gutter: 42px;
 .row--events{
-  @include row(44px);
+  @include row($event-gutter);
   flex-wrap: wrap;
   justify-content: center;
-  @media screen and (min-width: $bp-md){
-    justify-content: center;
-  }
 }
 .row--hero{
-  @include row();
+  @include row($gutters);
   height: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 121px;
   justify-content: flex-start;
   align-items: flex-end;
 }
+.row--mission{
+  @include row($gutters);
+  margin-bottom: 122px;
+}
+.row--footer{
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (min-width: $bp-sm){
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include row($gutters);
+  margin-top: 80px;
+}
 // Specific Columns
 .column--hero{
-  @include col(830px)
+  @include col(830px,$gutters)
   justify-content: flex-start;
   align-items: flex-end;
 }
 .column--about-left{
-  @include col-nogutters(500px);
+  @include col(500px, $gutters);
   display: flex;
   flex-direction: column;
+  order: 5;
+  padding-bottom: 1rem;
+  margin-top: 60px;
+  @media screen and (min-width: $bp-lg){
+    margin-right: 1rem;
+    order: 0;
+  }
 }
 .column--about-right{
-  @include col-nogutters(430px);
+  @include col(500px, $gutters);
   display: flex;
   flex-direction: column;
+  order: 1;
+  padding-bottom: 1rem;
+  @media screen and (min-width: $bp-lg){
+    margin-left: 1rem;
+    @include col(430px, $gutters);
+  }
 }
 .column--blog{
-  @include col(225px);
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  @include col(225px,$blog-gutter);
+  margin-bottom: $blog-gutter;
 }
 .column--event{
-  @include col(315px);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  @include col(315px,$event-gutter);
+  margin-bottom: $event-gutter;
 }
 .column--mission{
-  @include col(830px)
+  @include col(830px,$gutters)
+}
+.column--footer-left{
+  order: 1;
+  text-align: center;
+  @include col(100%, $gutters);
+  @media screen and (min-width: $bp-sm){
+    text-align: left;
+    @include col(70%, $gutters);
+  }
+  @include col(70%, $gutters);
+}
+.column--footer-right{
+  order: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  @include col(100%, $gutters);
+  @media screen and (min-width: $bp-sm){
+    text-align: left;
+    @include col(30%, $gutters);
+    order: 5;
+  }
 }

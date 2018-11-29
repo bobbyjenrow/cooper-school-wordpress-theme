@@ -8,6 +8,7 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+  padding: 0 200px;
   & a{
     color: $bg;
     border: 0;
@@ -62,7 +63,7 @@
     line-height: 34px;
   }
 }
-.content__column--big{
+.content__column--news{
   & a {
     font-weight: 400;
     font-size: $f3;
@@ -76,16 +77,25 @@
 }
 .logo__column{
   margin-right: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .mega-nav__footer{
+  position: absolute;
+  z-index: 99999999;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   font-weight: 300;
   background: $bg;
   color: $font-color;
   font-weight: 600;
-  padding: 1rem;
+  padding: 2rem;
+  padding-left: 200px;
   text-align: center;
 }
 .hamburger__subtext{

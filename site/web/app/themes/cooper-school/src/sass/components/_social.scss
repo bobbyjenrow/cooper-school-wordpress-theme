@@ -1,0 +1,20 @@
+.footer .social-bar{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  fill: #ffffff;
+  transition: .3s ease-out;
+  & .social :hover{
+    fill: $font-color;
+  }
+}
+.mega-nav .social-bar{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  fill: $font-color;
+  transition: .3s ease-out;
+  & .social :hover{
+    fill: $primary;
+  }
+}
