@@ -93,7 +93,7 @@
         </li>
       </ul>
     </div>
-    <div class="column content__column">
+    <div class="column content__column content__column--big">
       <h4>News</h4>
       <ul>
         <li>
@@ -105,6 +105,7 @@
       </ul>
       <button class="btn btn--light login-button" type="button" name="button">Login</button>
     </div>
+    <div class="column content__column"></div>
   </div>
   <div class="row mega-nav__footer">
     <span class="t5">The Cooper School, 13 Oakdale Place, Charleston, SC 29407      •      (843) 573-1033</span>

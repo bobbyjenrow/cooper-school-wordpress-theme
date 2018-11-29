@@ -37,12 +37,20 @@
 .mega-nav__content{
   height: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .content__column{
   margin: .5rem;
+  min-width: 4rem;
   & a {
-    font-weight: 400;
+    font-weight: 200;
+    font-size: $f5;
+    font-style: normal;
+  }
+  & h4{
+    font-size: $f3;
+    font-weight: 300;
+    margin-bottom: 1rem;
   }
   & ul{
     padding: 0;
@@ -54,14 +62,31 @@
     line-height: 34px;
   }
 }
+.content__column--big{
+  & a {
+    font-weight: 400;
+    font-size: $f3;
+    font-style: normal;
+    margin-bottom: 1.8rem;
+  }
+  & .btn{
+    padding: 18px 32px;
+    font-size: $f3;
+  }
+}
 .logo__column{
   margin-right: 1rem;
 }
 
 .mega-nav__footer{
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
   background: $bg;
   color: $font-color;
   font-weight: 600;
+  padding: 1rem;
+  text-align: center;
 }
 .hamburger__subtext{
   color: $bg;
