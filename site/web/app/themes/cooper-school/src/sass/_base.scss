@@ -9,13 +9,19 @@ html,body{
   background-color: $bg;
   margin: 0 !important;
   padding: 0;
+  @media screen and (min-width: 652px){
+    font-size: $font-size-md;
+  }
+  @media screen and (min-width: 748px){
+    font-size: $font-size-lg;
+  }
 }
 h1,h2,h3,h4,h5,h6{
-  font-weight: normal;
-  font-family: $font-heading;
+  font-weight: 500;
 }
 .th{
   font-size: $fh;
+  font-weight: 500;
 }
 h1,.t1{
   font-size: $f1;
@@ -42,5 +48,5 @@ a{
   border-bottom: 2px solid $primary;
 }
 a,p{
-  font-weight: normal;
+  font-weight: 300;
 }

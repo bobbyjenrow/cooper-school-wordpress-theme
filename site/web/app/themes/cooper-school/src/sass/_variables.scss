@@ -1,10 +1,10 @@
 // Fonts
-@import url("https://use.typekit.net/ytm0raf.css");
-$font-size-base: 24px;
-$font-heading: "Farnham Headline Medium", serif ;
-$font-base: "Farnham Headline Semi Light", serif ;
-$font-light: "Farnham Headline Light", serif ;
-
+@import url("https://use.typekit.net/tuf8sse.css");
+$font-size-base: 18px;
+$font-size-sm: 20px;
+$font-size-md: 22px;
+$font-size-lg: 24px;
+$font-base: farnham-headline, serif ;
 $font-sizes: (12,18,20,22,24,32,46,64);
 
 $fh: 2.666rem; // 64px
@@ -31,7 +31,10 @@ $purple: rgb(81, 78, 134);
 $bg: #ffffff;
 $tan: #f6fafc;
 // Spacing
-$gutters: 20tpx;
+
+
+$gutters: 1rem;
+
 $button-padding-x: 30px;
 $button-padding-y: 8px;
 $section-padding: 50px;
@@ -49,3 +52,7 @@ $hamburger-layer-border-radius : 1px;
 $hamburger-layer-width         : 40px;
 $hamburger-layer-spacing       : 7px;
 $hamburger-layer-height: 3px ;
+
+$bp-sm: 500px;
+$bp-md: 748px;
+$bp-lg: 1140px;
