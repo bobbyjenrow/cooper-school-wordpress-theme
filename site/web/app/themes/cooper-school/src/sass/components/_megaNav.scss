@@ -1,4 +1,5 @@
 .mega-nav{
+  overflow: hidden;
   height: 80vh;
   width: 100%;
   background-color: $primary;
@@ -8,13 +9,19 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  padding: 0 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 20px;
   opacity: 1;
   transition: opacity 1s ease;
   transform: translate(0);
   & a{
     color: $bg;
     border: 0;
+  }
+  @media screen and (max-width: $bp-lg){
+      padding-left: 50px;
+      padding-right: 50px;
   }
 }
 .mega-nav__col{
@@ -63,8 +70,9 @@
     text-decoration: none;
     list-style-type: none;
     padding: 0;
-    line-height: 34px;
+    line-height: $f2;
   }
+
 }
 .content__column--news{
   & a {
@@ -85,6 +93,9 @@
   position: absolute;
   top: 0;
   left: 0;
+  @media screen and (max-width: $bp-lg){
+    display: none;
+  }
 }
 
 .mega-nav__footer{
@@ -93,15 +104,53 @@
   bottom: 0;
   left: 0;
   right: 0;
-  display: flex;
-  justify-content: space-between;
   font-weight: 300;
+  font-size: 20px;
   background: $bg;
   color: $font-color;
   font-weight: 600;
-  padding: 2rem;
-  padding-left: 200px;
   text-align: center;
+  padding: 40px;
+  @media screen and (max-width: $bp-lg){
+      margin: 0;
+      flex-flow: column wrap;
+      justify-content: center;
+  }
+}
+.nav-footer-container{
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  margin-left: 135px;
+  & span{
+    display: inline-block;
+  }
+  & .social-bar{
+    width: 150px;
+    display: flex;
+    margin-left: auto;
+    align-items: flex-end;
+    justify-content: space-between;
+    fill: $font-color;
+    transition: .3s ease-out;
+    & .social :hover{
+      transition: .3s ease-out;
+      fill: $primary;
+    }
+  }
+  @media screen and (max-width: $bp-lg){
+      margin: 0;
+      flex-flow: column wrap;
+      justify-content: center;
+      & span{
+        width: 100%;
+        text-align: center;
+      }
+      & .social-bar{
+        margin-top: 1rem;
+        margin-right: auto;
+      }
+  }
 }
 .hamburger__subtext{
   color: $bg;

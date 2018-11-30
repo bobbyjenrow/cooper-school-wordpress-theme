@@ -67,6 +67,9 @@
     display: inline-block;
     text-align: center;
     width: 2rem;
+    @media screen and (max-width: $bp-lg){
+      display: none;
+    }
   }
 }
 .mega-nav__footer .text--contact{

@@ -79,7 +79,7 @@ get_header();
     </div>
   </section>
   <div class="img-wrap--event">
-    <section class="container s-events">
+    <section class="container--events s-events">
       <h1 class="text-heading">Upcoming Events</h1>
       <div class="row--events">
         <div class="column--event">

@@ -15,11 +15,13 @@
 .container--about{
   @include container($gutters);
 }
+$event-gutters: 42px;
 .container--events{
-  @include container($gutters);
+  @include container($event-gutters);
 }
+$blog-gutters: 42px;
 .container--blog{
-  @include container($gutters);
+  @include container($blog-gutters);
 }
 $footer-gutters: 50px;
 .container--footer{
@@ -40,26 +42,22 @@ $footer-gutters: 50px;
     justify-content: space-between;
   }
 }
-
-$blog-gutter: 42px;
 .row--blog{
-  @include row($blog-gutter);
+  @include row($blog-gutters);
   flex-wrap: wrap;
   justify-content: center;
-  @media screen and (min-width: $bp-lg){
-    justify-content: center;
-  }
+  // @media screen and (min-width: $bp-lg){
+  //   justify-content: center;
+  // }
 }
-$event-gutter: 42px;
 .row--events{
-  @include row($event-gutter);
+  @include row($event-gutters);
   flex-wrap: wrap;
   justify-content: center;
 }
 .row--hero{
   @include row($gutters);
   height: 100%;
-  padding-bottom: 121px;
   justify-content: flex-start;
   align-items: flex-end;
 }
@@ -115,12 +113,12 @@ $event-gutter: 42px;
   }
 }
 .column--blog{
-  @include col(225px,$blog-gutter);
-  margin-bottom: $blog-gutter;
+  @include col(225px,$blog-gutters);
+  margin-bottom: $blog-gutters;
 }
 .column--event{
-  @include col(315px,$event-gutter);
-  margin-bottom: $event-gutter;
+  @include col(315px,$event-gutters);
+  margin-bottom: $event-gutters;
 }
 .column--mission{
   @include col(830px,$gutters)

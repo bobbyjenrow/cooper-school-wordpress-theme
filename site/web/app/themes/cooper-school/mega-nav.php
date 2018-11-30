@@ -106,12 +106,15 @@
       <button class="btn btn--light btn--login" type="button" name="button">Login</button>
     </div>
   </div>
-  <div class="row mega-nav__footer">
-    <div class="text--contact">
-      <span >The Cooper School, 13 Oakdale Place, Charleston, SC 29407</span>
-      <span class="space">•</span>
-      <span >(843) 573-1033</span>
+  <div class="mega-nav__footer">
+    <div class="nav-footer-container">
+      <div class="text--contact">
+        <span >The Cooper School </span>
+        <span> 13 Oakdale Place, Charleston, SC 29407</span>
+        <span class="space">•</span>
+        <span >(843) 573-1033</span>
+      </div>
+      <? get_template_part('social-bar') ?>
     </div>
-    <? get_template_part('social-bar') ?>
   </div>
 </nav>
