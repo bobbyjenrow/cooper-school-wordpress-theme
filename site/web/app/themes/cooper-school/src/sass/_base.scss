@@ -3,6 +3,7 @@
 }
 
 html,body{
+  height: 100%;
   font-family: $font-base;
   font-size: $font-size-base;
   font-weight: 300;
@@ -48,11 +49,23 @@ a{
   color: $primary;
   text-decoration: none;
   padding-bottom: .2rem;
+  transition: .15s ease-in;
+  &:hover{
+      transition: .15s ease-in;
+      cursor: pointer;
+      color: $font-color;
+  }
+}
+.link--underline{
+  font-size: 20px;
+  padding-bottom: .2rem;
   border-bottom: 2px solid $primary;
-  transition: .2s ease-in;
-  & :hover{
-      transition: .2s ease-in;
-    color: $font-color;
+  transition: .15s ease-in;
+  &:hover{
+      transition: .15s ease-in;
+      cursor: pointer;
+      color: $font-color;
+      border-bottom: 2px solid $font-color;
   }
 }
 input{

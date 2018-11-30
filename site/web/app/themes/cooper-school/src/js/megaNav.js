@@ -13,19 +13,18 @@ export default class MegaNav {
     // Add the click event listener
     this.toggle.addEventListener('click', this.toggleCollapse);
     // Add initial collapsed classes
-    this.nav.classList.add("collapsed")
-    console.log('initialized')
+    this.nav.classList.add("mega-collapsed")
   }
   toggleCollapse = ()=>{
     if(this.state.isCollapsed){
       this.state.isCollapsed = false;
       this.toggle.classList.add("is-active")
-      this.nav.classList.remove("collapsed")
+      this.nav.classList.remove("mega-collapsed")
     }
     else{
       this.state.isCollapsed = true;
       this.toggle.classList.remove("is-active")
-      this.nav.classList.add("collapsed")
+      this.nav.classList.add("mega-collapsed")
     }
   }
 }

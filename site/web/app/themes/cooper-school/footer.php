@@ -26,7 +26,14 @@
 		    <div class="column--footer-right">
 		      <div class="newsletter">
 		        <h5 class="heading--newsletter">Sign Up for Our Newsletter</h5>
-		        <input class="input--newsletter" type="text" placeholder="Your Email Address" />
+						<form class="form--newsletter" action="index.html" method="post">
+							<input class="input--newsletter" type="text" placeholder="Your Email Address" />
+							<a class="submit-newsletter" >
+								<svg xmlns="http://www.w3.org/2000/svg" class="form-arrow"	width="12" height="12" viewBox="0 0 24 24">
+									<path d="M6 0l12 12-12 12z"/>
+								</svg>
+							</a>
+						</form>
 		      </div>
 		    </div>
 				<div class="column--footer-bottom">
@@ -34,6 +41,5 @@
 				</div>
 			</div>
 	</footer>
-
 </body>
 </html>

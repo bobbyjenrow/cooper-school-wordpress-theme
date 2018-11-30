@@ -70,7 +70,9 @@
     font-weight: 400;
     font-size: $f3;
     font-style: normal;
-    margin-bottom: 1.8rem;
+  }
+  & li{
+    margin-bottom: 15px;
   }
   & .btn{
     padding: 18px 32px;
@@ -106,4 +108,8 @@
   position: absolute;
   top: 1.25rem;
   left: 0;
+}
+
+.is-active .hamburger__subtext{
+  display: none;
 }

@@ -39,14 +39,15 @@
   font-size: $f4;
   &:hover{
     background-color: darken($primary, 10%);
+
   }
 }
 .btn--login{
-  padding: $button-padding-y $button-padding-x;
+  padding: 16px 40px;
   border-radius: 6px;
   background-color: $bg;
   color: $primary;
-  font-size: $f4;
+  font-size: 18px;
 }
 .btn--lg{
   padding: 18px 32px;
@@ -73,17 +74,22 @@
   border: 0;
   padding-bottom: 0;
   transition: .3s ease-in;
+  &:hover{
+    color: $bg;
+    border: 0;
+  }
 }
 @mixin buttonBlogBG($color,$bg1){
   $mycolor: rgba($color, 1);
-  $mydarkcolor: darken($mycolor,10%);
+  $mydarkcolor: rgba($mycolor,.1);
   $mydarkfilter: rgba($mydarkcolor, .2);
   background-image: url($bg1),linear-gradient($mycolor,$mycolor);
   background-repeat: no-repeat,no-repeat;
   background-size: cover;
   background-position: center,center;
+  transition: .15s ease-in;
   &:hover{
-    background-image: url($bg1), linear-gradient($mydarkcolor,$mydarkcolor);
+    box-shadow: 1px 1px 10px 1px rgba($font-color, .8);
   }
 }
 

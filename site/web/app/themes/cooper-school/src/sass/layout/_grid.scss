@@ -11,6 +11,7 @@
   @include row-nogutters();
 }
 // Specific Containers
+
 .container--about{
   @include container($gutters);
 }
@@ -113,7 +114,7 @@ $footer-gutters: 50px;
   padding-bottom: 1rem;
   @media screen and (min-width: $bp-lg){
     margin-left: 1rem;
-    @include col(430px, $gutters);
+    @include col(439px, $gutters);
   }
 }
 .column--blog{

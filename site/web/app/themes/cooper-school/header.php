@@ -24,7 +24,6 @@
 <div id="page" class="site">
 	<header class="header">
 		<?php get_template_part('mega-nav'); ?>
-		<?php get_template_part('slide-nav'); ?>
 	    <div class="header__left">
 				<img src="https://res.cloudinary.com/ds0f4qyyt/image/upload/v1543421792/cooper-logo-text_jwaypv.png" alt="">
 	    </div>
