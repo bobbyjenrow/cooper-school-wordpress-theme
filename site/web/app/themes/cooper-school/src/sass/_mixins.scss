@@ -8,11 +8,13 @@
   padding-right: $gutter-width/2;
   max-width: $max-width;
 }
-@mixin container-fluid(){
-  box-sizing: content-box;
+@mixin container-fluid($gutter-width){
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-left: $gutter-width/2;
+  padding-right: $gutter-width/2;
 }
 @mixin row($gutter-width){
   display: flex;

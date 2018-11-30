@@ -1,6 +1,6 @@
 module.exports = {
-  presets: ["postcss-preset-env"],
   plugins: [
+    require("postcss-preset-env"),
     require("cssnano")
   ]
 }

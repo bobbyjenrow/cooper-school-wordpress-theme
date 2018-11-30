@@ -23,6 +23,7 @@
 
 .mega-collapsed{
   transform: translate(99999px);
+  display: none;
   opacity: 0;
   position: absolute;
   transition: opacity 1s ease;

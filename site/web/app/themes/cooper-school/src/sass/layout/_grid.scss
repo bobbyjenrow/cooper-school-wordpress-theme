@@ -1,9 +1,9 @@
 .container{
   @include container($gutters);
 }
-.container--fluid{
-  @include container-fluid();
-}
+// .container--fluid{
+//   @include container-fluid();
+// }
 .row{
   @include row($gutters);
 }
@@ -21,12 +21,11 @@
 .container--blog{
   @include container($gutters);
 }
+$footer-gutters: 50px;
 .container--footer{
-  @include container-fluid();
+  @include container-fluid($footer-gutters);
 }
-.container--slide-nav{
-  @include container-fluid();
-}
+
 // Specific Rows
 .row--about{
   @include row($gutters);
@@ -68,11 +67,9 @@ $event-gutter: 42px;
   @include row($gutters);
   margin-bottom: 122px;
 }
-$footer-gutters: 50px;
 .row--footer{
-  @include row($gutters);
+  @include row(50px);
   margin-top: 80px;
-  padding: 0 50px;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +128,7 @@ $footer-gutters: 50px;
 .column--footer-left{
   order: 1;
   text-align: center;
-  @include col(100%, $gutters);
+  @include col(100%, $footer-gutters);
   @media screen and (min-width: $bp-lg){
     text-align: left;
     @include col(654px, $footer-gutters);
@@ -141,7 +138,7 @@ $footer-gutters: 50px;
   order: 0;
   margin-bottom: 1rem;
   text-align: center;
-  @include col(100%, $gutters);
+  @include col(100%, $footer-gutters);
   @media screen and (min-width: $bp-lg){
     @include col(260px,$footer-gutters);
 
